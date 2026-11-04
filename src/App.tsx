@@ -784,21 +784,21 @@ function CallToAction() {
       <div className="absolute -top-40 -right-40 w-60 h-60 sm:w-80 sm:h-80 rounded-full border border-accent-orange/10" />
       <div className="absolute -bottom-40 -left-40 w-72 h-72 sm:w-96 sm:h-96 rounded-full border border-industrial-blue/10" />
 
-      <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative flex items-center justify-center">
-        <div className={`max-w-4xl w-full text-center transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-          <span className="text-accent-orange font-semibold text-xs sm:text-sm uppercase tracking-widest mb-3 sm:mb-4 block text-center">Get Started</span>
-          <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold mb-4 sm:mb-6 leading-tight text-center">
+      <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative">
+        <div className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+          <span className="text-accent-orange font-semibold text-xs sm:text-sm uppercase tracking-widest mb-3 sm:mb-4 block">Get Started</span>
+          <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold mb-4 sm:mb-6 leading-tight">
             LET'S BUILD SOMETHING <span className="text-accent-orange">BETTER TOGETHER</span>
           </h2>
-          <p className="text-white/70 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto mb-8 sm:mb-10 text-center">
+          <p className="text-white/70 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto mb-8 sm:mb-10">
             Discover reliable polyester manufacturing solutions designed to meet your industry's evolving needs. Our team is ready to help you find the perfect solution.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 w-full">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4">
             <a href="mailto:info@polytech.com" className="group px-6 sm:px-8 py-3 sm:py-4 bg-accent-orange text-white font-semibold rounded-xl hover:bg-accent-orange/90 transition-all duration-300 hover:shadow-xl hover:shadow-accent-orange/30 flex items-center justify-center gap-2 text-sm sm:text-base w-full sm:w-auto">
               Contact Our Team
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
             </a>
-            <a href="mailto:sales@polytech.com" className="px-6 sm:px-8 py-3 sm:py-4 glass text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-300 text-sm sm:text-base w-full sm:w-auto text-center">
+            <a href="mailto:sales@polytech.com" className="px-6 sm:px-8 py-3 sm:py-4 glass text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-300 text-sm sm:text-base w-full sm:w-auto flex items-center justify-center">
               Request a Quotation
             </a>
           </div>
