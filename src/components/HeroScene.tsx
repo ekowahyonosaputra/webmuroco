@@ -13,7 +13,7 @@ export default function HeroScene() {
 
     // Scene setup
     const scene = new THREE.Scene();
-    scene.fog = new THREE.FogExp2(0x101D2D, 0.008);
+    scene.fog = new THREE.FogExp2(0x0F2A1D, 0.008);
 
     // Camera
     const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
@@ -62,7 +62,7 @@ export default function HeroScene() {
     // Ground
     const groundGeom = new THREE.PlaneGeometry(100, 100);
     const groundMat = new THREE.MeshStandardMaterial({ 
-      color: 0x1a2a3a, 
+      color: 0x1a3a2a, 
       roughness: 0.8,
       metalness: 0.2
     });
@@ -73,7 +73,7 @@ export default function HeroScene() {
 
     // Road markings
     const roadGeom = new THREE.PlaneGeometry(8, 60);
-    const roadMat = new THREE.MeshStandardMaterial({ color: 0x2a3a4a, roughness: 0.6 });
+    const roadMat = new THREE.MeshStandardMaterial({ color: 0x2a4a3a, roughness: 0.6 });
     const road = new THREE.Mesh(roadGeom, roadMat);
     road.rotation.x = -Math.PI / 2;
     road.position.set(0, 0.01, 0);
@@ -83,7 +83,7 @@ export default function HeroScene() {
     // Road lines
     for (let i = -25; i < 25; i += 4) {
       const lineGeom = new THREE.PlaneGeometry(0.2, 2);
-      const lineMat = new THREE.MeshStandardMaterial({ color: 0xF28C28, emissive: 0xF28C28, emissiveIntensity: 0.3 });
+      const lineMat = new THREE.MeshStandardMaterial({ color: 0x4ADE80, emissive: 0x4ADE80, emissiveIntensity: 0.3 });
       const line = new THREE.Mesh(lineGeom, lineMat);
       line.rotation.x = -Math.PI / 2;
       line.position.set(0, 0.02, i);
@@ -168,7 +168,7 @@ function createTruck(): THREE.Group {
   // Cabin
   const cabinGeom = new THREE.BoxGeometry(3, 3, 2.8);
   const cabinMat = new THREE.MeshStandardMaterial({ 
-    color: 0x174A72, 
+    color: 0x1F5F3E, 
     metalness: 0.6, 
     roughness: 0.3 
   });
@@ -192,7 +192,7 @@ function createTruck(): THREE.Group {
 
   // Trailer bed
   const bedGeom = new THREE.BoxGeometry(12, 0.5, 3);
-  const bedMat = new THREE.MeshStandardMaterial({ color: 0x2a3a4a, metalness: 0.7, roughness: 0.4 });
+  const bedMat = new THREE.MeshStandardMaterial({ color: 0x2a4a3a, metalness: 0.7, roughness: 0.4 });
   const bed = new THREE.Mesh(bedGeom, bedMat);
   bed.position.set(-2, 1.5, 0);
   bed.castShadow = true;
@@ -263,7 +263,7 @@ function createContainer(): THREE.Group {
   // Main container body
   const bodyGeom = new THREE.BoxGeometry(10, 3, 2.8);
   const bodyMat = new THREE.MeshStandardMaterial({ 
-    color: 0xF28C28, 
+    color: 0x4ADE80, 
     metalness: 0.4, 
     roughness: 0.5 
   });
@@ -274,7 +274,7 @@ function createContainer(): THREE.Group {
   // Container ridges
   for (let i = -4; i <= 4; i += 1) {
     const ridgeGeom = new THREE.BoxGeometry(0.05, 2.8, 2.85);
-    const ridgeMat = new THREE.MeshStandardMaterial({ color: 0xd47a20, metalness: 0.5 });
+    const ridgeMat = new THREE.MeshStandardMaterial({ color: 0x22C55E, metalness: 0.5 });
     const ridge = new THREE.Mesh(ridgeGeom, ridgeMat);
     ridge.position.set(i, 0, 0);
     container.add(ridge);
@@ -282,7 +282,7 @@ function createContainer(): THREE.Group {
 
   // Container door (back)
   const doorGeom = new THREE.BoxGeometry(0.1, 2.8, 2.6);
-  const doorMat = new THREE.MeshStandardMaterial({ color: 0xe07820, metalness: 0.5 });
+  const doorMat = new THREE.MeshStandardMaterial({ color: 0x16A34A, metalness: 0.5 });
   const door = new THREE.Mesh(doorGeom, doorMat);
   door.position.set(-5, 0, 0);
   container.add(door);
@@ -312,7 +312,7 @@ function createCrane(): THREE.Group {
 
   // Base
   const baseGeom = new THREE.BoxGeometry(3, 1, 3);
-  const baseMat = new THREE.MeshStandardMaterial({ color: 0xF28C28, metalness: 0.6, roughness: 0.4 });
+  const baseMat = new THREE.MeshStandardMaterial({ color: 0x4ADE80, metalness: 0.6, roughness: 0.4 });
   const base = new THREE.Mesh(baseGeom, baseMat);
   base.position.set(0, 0.5, 0);
   base.castShadow = true;
@@ -320,7 +320,7 @@ function createCrane(): THREE.Group {
 
   // Vertical tower
   const towerGeom = new THREE.BoxGeometry(1, 12, 1);
-  const towerMat = new THREE.MeshStandardMaterial({ color: 0xF28C28, metalness: 0.5 });
+  const towerMat = new THREE.MeshStandardMaterial({ color: 0x4ADE80, metalness: 0.5 });
   const tower = new THREE.Mesh(towerGeom, towerMat);
   tower.position.set(0, 7, 0);
   tower.castShadow = true;
@@ -328,7 +328,7 @@ function createCrane(): THREE.Group {
 
   // Horizontal boom
   const boomGeom = new THREE.BoxGeometry(12, 0.6, 0.6);
-  const boomMat = new THREE.MeshStandardMaterial({ color: 0xd47a20, metalness: 0.5 });
+  const boomMat = new THREE.MeshStandardMaterial({ color: 0x22C55E, metalness: 0.5 });
   const boom = new THREE.Mesh(boomGeom, boomMat);
   boom.position.set(5, 13, 0);
   boom.castShadow = true;
@@ -361,7 +361,7 @@ function createCrane(): THREE.Group {
 
 function createIndustrialBackground(scene: THREE.Scene) {
   // Warehouse buildings
-  const buildingMat = new THREE.MeshStandardMaterial({ color: 0x1a2a3a, roughness: 0.7, metalness: 0.3 });
+  const buildingMat = new THREE.MeshStandardMaterial({ color: 0x1a3a2a, roughness: 0.7, metalness: 0.3 });
   
   // Large warehouse
   const warehouse1Geom = new THREE.BoxGeometry(20, 8, 12);
@@ -372,7 +372,7 @@ function createIndustrialBackground(scene: THREE.Scene) {
 
   // Warehouse roof
   const roofGeom = new THREE.BoxGeometry(21, 0.5, 13);
-  const roofMat = new THREE.MeshStandardMaterial({ color: 0x2a3a4a, metalness: 0.5 });
+  const roofMat = new THREE.MeshStandardMaterial({ color: 0x2a4a3a, metalness: 0.5 });
   const roof = new THREE.Mesh(roofGeom, roofMat);
   roof.position.set(-20, 8.25, -15);
   scene.add(roof);
@@ -409,7 +409,7 @@ function createIndustrialBackground(scene: THREE.Scene) {
 
   // Loading dock
   const dockGeom = new THREE.BoxGeometry(10, 1.5, 6);
-  const dockMat = new THREE.MeshStandardMaterial({ color: 0x2a3a4a, roughness: 0.6 });
+  const dockMat = new THREE.MeshStandardMaterial({ color: 0x2a4a3a, roughness: 0.6 });
   const dock = new THREE.Mesh(dockGeom, dockMat);
   dock.position.set(-10, 0.75, 5);
   dock.receiveShadow = true;
@@ -430,7 +430,7 @@ function createParticles(): THREE.Points {
   geom.setAttribute('position', new THREE.BufferAttribute(positions, 3));
 
   const mat = new THREE.PointsMaterial({
-    color: 0xF28C28,
+    color: 0x4ADE80,
     size: 0.1,
     transparent: true,
     opacity: 0.6,

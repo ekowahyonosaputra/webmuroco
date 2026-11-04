@@ -33,7 +33,7 @@ export default function ProductScene({ type }: ProductSceneProps) {
     dirLight.position.set(5, 8, 5);
     dirLight.castShadow = true;
     scene.add(dirLight);
-    const pointLight = new THREE.PointLight(0xF28C28, 0.5, 20);
+    const pointLight = new THREE.PointLight(0x4ADE80, 0.5, 20);
     pointLight.position.set(-3, 4, 3);
     scene.add(pointLight);
 

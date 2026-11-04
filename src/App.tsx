@@ -259,7 +259,7 @@ function ProductShowcase() {
   const current = products[activeProduct];
 
   return (
-    <section id="products" ref={ref} className="py-16 sm:py-20 lg:py-24 xl:py-32 relative bg-gradient-to-b from-deep-navy via-[#0d1825] to-deep-navy">
+    <section id="products" ref={ref} className="py-16 sm:py-20 lg:py-24 xl:py-32 relative bg-gradient-to-b from-deep-navy via-[#0a1f14] to-deep-navy">
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Section Header */}
         <div className={`text-center mb-12 sm:mb-16 transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
@@ -366,7 +366,7 @@ function ManufacturingProcess() {
 
   return (
     <section id="manufacturing" ref={ref} className="py-16 sm:py-20 lg:py-24 xl:py-32 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-deep-navy to-[#0d1825]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-deep-navy to-[#0a1f14]" />
       <div className="absolute inset-0 grid-pattern opacity-10" />
       
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative">
@@ -468,7 +468,7 @@ function FactoryFacilities() {
   ];
 
   return (
-    <section ref={ref} className="py-16 sm:py-20 lg:py-24 xl:py-32 relative bg-gradient-to-b from-[#0d1825] to-deep-navy">
+    <section ref={ref} className="py-16 sm:py-20 lg:py-24 xl:py-32 relative bg-gradient-to-b from-[#0a1f14] to-deep-navy">
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header */}
         <div className={`text-center mb-12 sm:mb-16 transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
@@ -557,7 +557,7 @@ function QualityAssurance() {
 
   return (
     <section id="quality" ref={ref} className="py-16 sm:py-20 lg:py-24 xl:py-32 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-deep-navy via-[#0a1520] to-deep-navy" />
+      <div className="absolute inset-0 bg-gradient-to-b from-deep-navy via-[#081a11] to-deep-navy" />
       
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative">
         {/* Header */}
@@ -721,7 +721,7 @@ function WhyChooseUs() {
   ];
 
   return (
-    <section ref={ref} className="py-16 sm:py-20 lg:py-24 xl:py-32 relative bg-gradient-to-b from-deep-navy to-[#0d1825]">
+    <section ref={ref} className="py-16 sm:py-20 lg:py-24 xl:py-32 relative bg-gradient-to-b from-deep-navy to-[#0a1f14]">
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header */}
         <div className={`text-center mb-12 sm:mb-16 transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
@@ -833,7 +833,7 @@ function BackToTop() {
 /* ============ FOOTER ============ */
 function Footer() {
   return (
-    <footer className="bg-[#0a1520] border-t border-white/5 pt-12 sm:pt-16 pb-6 sm:pb-8 relative">
+    <footer className="bg-[#081a11] border-t border-white/5 pt-12 sm:pt-16 pb-6 sm:pb-8 relative">
       <div className="absolute inset-0 noise-overlay" />
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
