@@ -43,18 +43,16 @@ function LoadingScreen() {
   return (
     <div className="fixed inset-0 bg-deep-navy flex flex-col items-center justify-center z-[9999]">
       <div className="relative mb-8">
-        <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-accent-orange to-industrial-blue flex items-center justify-center animate-pulse">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
-            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-            <path d="M2 17l10 5 10-5"/>
-            <path d="M2 12l10 5 10-5"/>
-          </svg>
-        </div>
+        <img 
+          src="https://muroco.com/wp-content/uploads/2020/09/LOGO-PUTIH-MUROCO.png" 
+          alt="Muroco Logo" 
+          className="h-20 w-auto animate-pulse"
+        />
         <div className="absolute inset-[-8px] border-2 border-accent-orange/30 rounded-3xl animate-spin" style={{ animationDuration: '3s' }} />
       </div>
       
       <div className="text-xl font-bold mb-2">
-        PolyTech<span className="text-accent-orange">.</span>
+        Muroco<span className="text-accent-orange">.</span>
       </div>
       <div className="text-white/50 text-sm mb-8">Premium Polyester Manufacturing</div>
       
@@ -789,7 +787,7 @@ function CallToAction() {
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative">
         <div className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
           <span className="text-accent-orange font-semibold text-xs sm:text-sm uppercase tracking-widest mb-3 sm:mb-4 block">Get Started</span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold mb-4 sm:mb-6 leading-tight text-center">
             LET'S BUILD SOMETHING <span className="text-accent-orange">BETTER TOGETHER</span>
           </h2>
           <p className="text-white/70 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto mb-8 sm:mb-10">
@@ -842,14 +840,11 @@ function Footer() {
           {/* Company */}
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-2 mb-3 sm:mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent-orange to-industrial-blue flex items-center justify-center">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
-                  <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                  <path d="M2 17l10 5 10-5"/>
-                  <path d="M2 12l10 5 10-5"/>
-                </svg>
-              </div>
-              <span className="text-lg font-bold">PolyTech<span className="text-accent-orange">.</span></span>
+              <img 
+                src="https://muroco.com/wp-content/uploads/2020/09/LOGO-PUTIH-MUROCO.png" 
+                alt="Muroco Logo" 
+                className="h-8 sm:h-10 w-auto"
+              />
             </div>
             <p className="text-white/50 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
               Leading polyester manufacturing company delivering premium quality products for industrial applications worldwide.

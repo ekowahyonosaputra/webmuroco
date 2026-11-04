@@ -29,17 +29,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-3 group">
-            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-gradient-to-br from-accent-orange to-industrial-blue flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
-                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                <path d="M2 17l10 5 10-5"/>
-                <path d="M2 12l10 5 10-5"/>
-              </svg>
-            </div>
-            <div>
-              <span className="text-lg sm:text-xl font-bold text-white tracking-tight">PolyTech</span>
-              <span className="text-accent-orange text-lg sm:text-xl font-bold">.</span>
-            </div>
+            <img 
+              src="https://muroco.com/wp-content/uploads/2020/09/LOGO-PUTIH-MUROCO.png" 
+              alt="Muroco Logo" 
+              className="h-8 sm:h-10 w-auto transform group-hover:scale-110 transition-transform duration-300"
+            />
           </a>
 
           {/* Desktop Nav */}
