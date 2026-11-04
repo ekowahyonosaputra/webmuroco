@@ -854,12 +854,12 @@ function CallToAction() {
           <p className="text-white/70 text-base sm:text-lg lg:text-xl max-w-3xl mx-auto mb-12 sm:mb-14 lg:mb-16 text-center leading-relaxed">
             Discover reliable polyester manufacturing solutions designed to meet your industry's evolving needs. Our team is ready to help you find the perfect solution.
           </p>
-          <div className="flex flex-col items-center justify-center gap-4 sm:gap-6 w-full max-w-sm mx-auto sm:max-w-none sm:flex-row">
-            <a href="mailto:info@polytech.com" className="group px-8 sm:px-10 py-4 sm:py-5 bg-accent-orange text-white font-semibold rounded-xl hover:bg-accent-orange/90 transition-all duration-300 hover:shadow-xl hover:shadow-accent-orange/30 flex items-center justify-center gap-2 text-sm sm:text-base w-full sm:w-auto text-center mx-auto">
+          <div className="flex flex-col items-center justify-center gap-4 sm:gap-6 w-full sm:flex-row sm:justify-center">
+            <a href="mailto:info@polytech.com" className="group px-8 sm:px-10 py-4 sm:py-5 bg-accent-orange text-white font-semibold rounded-xl hover:bg-accent-orange/90 transition-all duration-300 hover:shadow-xl hover:shadow-accent-orange/30 flex items-center justify-center gap-2 text-sm sm:text-base w-full sm:w-auto text-center">
               Contact Our Team
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
             </a>
-            <a href="mailto:sales@polytech.com" className="px-8 sm:px-10 py-4 sm:py-5 glass text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-300 text-sm sm:text-base w-full sm:w-auto flex items-center justify-center text-center mx-auto">
+            <a href="mailto:sales@polytech.com" className="px-8 sm:px-10 py-4 sm:py-5 glass text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-300 text-sm sm:text-base w-full sm:w-auto flex items-center justify-center text-center">
               Request a Quotation
             </a>
           </div>

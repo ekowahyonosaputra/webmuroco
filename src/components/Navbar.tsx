@@ -67,13 +67,13 @@ export default function Navbar() {
 
       {/* Mobile Menu - Dropdown */}
       <div className={`lg:hidden absolute top-full left-0 right-0 bg-deep-navy/98 backdrop-blur-xl border-t border-white/10 shadow-2xl transition-all duration-300 overflow-hidden ${mobileOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
-        <div className="px-4 py-6 space-y-1">
+        <div className="px-4 py-6 space-y-1 text-center">
           {navLinks.map((link, index) => (
             <a
               key={link.label}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="block text-base font-medium text-white/90 hover:text-accent-orange hover:bg-white/5 transition-all duration-300 py-3 px-4 rounded-lg"
+              className="block text-base font-medium text-white/90 hover:text-accent-orange hover:bg-white/5 transition-all duration-300 py-3 px-4 rounded-lg text-center"
               style={{ 
                 transitionDelay: `${index * 50}ms`,
                 transform: mobileOpen ? 'translateY(0)' : 'translateY(-10px)',
