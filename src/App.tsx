@@ -835,33 +835,39 @@ function CallToAction() {
   }, []);
 
   return (
-    <section id="contact" ref={ref} className="py-16 sm:py-20 lg:py-24 xl:py-32 relative overflow-hidden">
+    <section id="contact" ref={ref} className="py-20 sm:py-24 lg:py-28 xl:py-36 relative overflow-hidden">
+      {/* Top Divider */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent-orange/30 to-transparent" />
+      
       <div className="absolute inset-0 bg-gradient-to-br from-industrial-blue/30 via-deep-navy to-accent-orange/10" />
       <div className="absolute inset-0 grid-pattern opacity-10" />
       
       <div className="absolute -top-40 -right-40 w-60 h-60 sm:w-80 sm:h-80 rounded-full border border-accent-orange/10" />
       <div className="absolute -bottom-40 -left-40 w-72 h-72 sm:w-96 sm:h-96 rounded-full border border-industrial-blue/10" />
 
-      <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative">
-        <div className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-          <span className="text-accent-orange font-semibold text-xs sm:text-sm uppercase tracking-widest mb-4 sm:mb-6 block">Get Started</span>
-          <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold mb-6 sm:mb-8 leading-tight">
+      <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative flex items-center justify-center min-h-[60vh]">
+        <div className={`max-w-4xl w-full text-center transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+          <span className="inline-block text-accent-orange font-semibold text-xs sm:text-sm uppercase tracking-widest mb-6 sm:mb-8 px-4 py-2 rounded-full bg-accent-orange/10 border border-accent-orange/20">Get Started</span>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-8 sm:mb-10 leading-tight text-center">
             LET'S BUILD SOMETHING <span className="text-accent-orange">BETTER TOGETHER</span>
           </h2>
-          <p className="text-white/70 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto mb-10 sm:mb-12 lg:mb-14">
+          <p className="text-white/70 text-base sm:text-lg lg:text-xl max-w-3xl mx-auto mb-12 sm:mb-14 lg:mb-16 text-center leading-relaxed">
             Discover reliable polyester manufacturing solutions designed to meet your industry's evolving needs. Our team is ready to help you find the perfect solution.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-5">
-            <a href="mailto:info@polytech.com" className="group px-6 sm:px-8 py-3 sm:py-4 bg-accent-orange text-white font-semibold rounded-xl hover:bg-accent-orange/90 transition-all duration-300 hover:shadow-xl hover:shadow-accent-orange/30 flex items-center justify-center gap-2 text-sm sm:text-base w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
+            <a href="mailto:info@polytech.com" className="group px-8 sm:px-10 py-4 sm:py-5 bg-accent-orange text-white font-semibold rounded-xl hover:bg-accent-orange/90 transition-all duration-300 hover:shadow-xl hover:shadow-accent-orange/30 flex items-center justify-center gap-2 text-sm sm:text-base w-full sm:w-auto">
               Contact Our Team
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
             </a>
-            <a href="mailto:sales@polytech.com" className="px-6 sm:px-8 py-3 sm:py-4 glass text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-300 text-sm sm:text-base w-full sm:w-auto flex items-center justify-center">
+            <a href="mailto:sales@polytech.com" className="px-8 sm:px-10 py-4 sm:py-5 glass text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-300 text-sm sm:text-base w-full sm:w-auto flex items-center justify-center">
               Request a Quotation
             </a>
           </div>
         </div>
       </div>
+      
+      {/* Bottom Divider */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent-orange/30 to-transparent" />
     </section>
   );
 }
