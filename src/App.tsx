@@ -897,13 +897,13 @@ function BackToTop() {
 /* ============ FOOTER ============ */
 function Footer() {
   return (
-    <footer className="bg-[#151d1a] border-t border-white/5 pt-12 sm:pt-16 pb-6 sm:pb-8 relative mt-16 sm:mt-20">
+    <footer className="bg-[#151d1a] border-t border-white/5 pt-16 sm:pt-20 pb-6 sm:pb-8 relative mt-16 sm:mt-20">
       <div className="absolute inset-0 noise-overlay" />
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
           {/* Company */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <div className="flex items-center gap-2 mb-3 sm:mb-4">
+            <div className="flex items-center gap-2 mb-3 sm:mb-4 mt-2">
               <img 
                 src="https://muroco.com/wp-content/uploads/2020/09/LOGO-PUTIH-MUROCO.png" 
                 alt="Muroco Logo" 
