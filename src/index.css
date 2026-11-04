@@ -103,6 +103,31 @@ h1, h2, h3, h4, h5, h6 {
   75% { transform: translate(15px, -20px) scale(1.1); opacity: 0.6; }
 }
 
+@keyframes panel-fade {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.02); }
+}
+
+.animate-panel-fade {
+  animation: panel-fade 4s ease-in-out infinite;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.rotate-x-60 {
+  transform: rotateX(60deg);
+}
+
+.rotate-y-70 {
+  transform: rotateY(70deg);
+}
+
+.-rotate-y-70 {
+  transform: rotateY(-70deg);
+}
+
 .animate-float { animation: float 6s ease-in-out infinite; }
 .animate-pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
 .animate-rotate3d { animation: rotate3d 20s linear infinite; }

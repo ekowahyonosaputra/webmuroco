@@ -205,15 +205,73 @@ function AboutSection() {
           <div className={`transition-all duration-1000 delay-300 ${visible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden glass p-1">
-                <div className="w-full h-full rounded-xl bg-gradient-to-br from-industrial-blue/40 to-deep-navy flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 grid-pattern opacity-30" />
-                  <div className="relative z-10 text-center p-4 sm:p-8">
-                    <Factory className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 text-accent-orange mx-auto mb-3 sm:mb-4 animate-float" />
-                    <h3 className="text-xl sm:text-2xl font-bold mb-2">State-of-the-Art Facility</h3>
-                    <p className="text-sm sm:text-base text-white/60">50,000 sqm Production Area</p>
+                <div className="w-full h-full rounded-xl bg-gradient-to-br from-industrial-blue/40 to-deep-navy relative overflow-hidden">
+                  {/* Office Room Animation with Polyester Panels */}
+                  <div className="absolute inset-0 perspective-1000">
+                    {/* Floor */}
+                    <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-[#2a4a3a] to-[#1a3a2a] transform rotate-x-60 origin-bottom" />
+                    
+                    {/* Back Wall with Panels */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="grid grid-cols-4 gap-2 p-8 w-full h-full">
+                        {Array.from({ length: 16 }).map((_, i) => (
+                          <div 
+                            key={i}
+                            className="bg-gradient-to-br from-[#8B7355] to-[#6B5345] rounded-sm shadow-lg animate-panel-fade"
+                            style={{ 
+                              animationDelay: `${i * 0.1}s`,
+                              transform: 'rotateY(5deg)'
+                            }}
+                          />
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Left Wall Panels */}
+                    <div className="absolute left-0 top-0 bottom-0 w-1/4 flex flex-col gap-2 p-4 transform rotate-y-70 origin-left">
+                      {Array.from({ length: 6 }).map((_, i) => (
+                        <div 
+                          key={i}
+                          className="flex-1 bg-gradient-to-br from-[#9B8365] to-[#7B6355] rounded-sm shadow-lg animate-panel-fade"
+                          style={{ animationDelay: `${i * 0.15}s` }}
+                        />
+                      ))}
+                    </div>
+
+                    {/* Right Wall Panels */}
+                    <div className="absolute right-0 top-0 bottom-0 w-1/4 flex flex-col gap-2 p-4 transform -rotate-y-70 origin-right">
+                      {Array.from({ length: 6 }).map((_, i) => (
+                        <div 
+                          key={i}
+                          className="flex-1 bg-gradient-to-br from-[#9B8365] to-[#7B6355] rounded-sm shadow-lg animate-panel-fade"
+                          style={{ animationDelay: `${i * 0.15}s` }}
+                        />
+                      ))}
+                    </div>
+
+                    {/* Desk */}
+                    <div className="absolute bottom-1/4 left-1/2 -translate-x-1/2 w-3/4 h-8 bg-gradient-to-r from-[#4a3a2a] to-[#3a2a1a] rounded-t-lg shadow-2xl" />
+
+                    {/* Office Chair */}
+                    <div className="absolute bottom-1/3 left-1/2 -translate-x-1/2 w-16 h-20 flex flex-col items-center">
+                      <div className="w-12 h-12 bg-[#2a2a2a] rounded-full shadow-lg" />
+                      <div className="w-2 h-8 bg-[#1a1a1a]" />
+                      <div className="w-16 h-2 bg-[#1a1a1a] rounded-full" />
+                    </div>
+
+                    {/* Ambient Light Effect */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-deep-navy/60" />
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-32 bg-accent-orange/10 rounded-full blur-3xl animate-pulse" />
                   </div>
-                  <div className="absolute top-4 right-4 w-16 h-16 sm:w-20 sm:h-20 border border-accent-orange/30 rounded-full animate-pulse" />
-                  <div className="absolute bottom-4 left-4 w-24 h-24 sm:w-32 sm:h-32 border border-industrial-blue/30 rounded-full" />
+
+                  {/* Overlay Content */}
+                  <div className="absolute inset-0 flex items-center justify-center z-20">
+                    <div className="text-center p-4 sm:p-8 bg-deep-navy/70 backdrop-blur-sm rounded-xl">
+                      <Factory className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 text-accent-orange mx-auto mb-3 sm:mb-4 animate-float" />
+                      <h3 className="text-xl sm:text-2xl font-bold mb-2 text-white">State-of-the-Art Facility</h3>
+                      <p className="text-sm sm:text-base text-white/80">50,000 sqm Production Area</p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="absolute -bottom-3 sm:-bottom-4 -left-3 sm:-left-4 glass rounded-xl px-4 sm:px-6 py-3 sm:py-4 animate-float">
@@ -786,14 +844,14 @@ function CallToAction() {
 
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative">
         <div className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-          <span className="text-accent-orange font-semibold text-xs sm:text-sm uppercase tracking-widest mb-3 sm:mb-4 block">Get Started</span>
-          <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold mb-4 sm:mb-6 leading-tight">
+          <span className="text-accent-orange font-semibold text-xs sm:text-sm uppercase tracking-widest mb-4 sm:mb-6 block">Get Started</span>
+          <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold mb-6 sm:mb-8 leading-tight">
             LET'S BUILD SOMETHING <span className="text-accent-orange">BETTER TOGETHER</span>
           </h2>
-          <p className="text-white/70 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto mb-8 sm:mb-10">
+          <p className="text-white/70 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto mb-10 sm:mb-12 lg:mb-14">
             Discover reliable polyester manufacturing solutions designed to meet your industry's evolving needs. Our team is ready to help you find the perfect solution.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-5">
             <a href="mailto:info@polytech.com" className="group px-6 sm:px-8 py-3 sm:py-4 bg-accent-orange text-white font-semibold rounded-xl hover:bg-accent-orange/90 transition-all duration-300 hover:shadow-xl hover:shadow-accent-orange/30 flex items-center justify-center gap-2 text-sm sm:text-base w-full sm:w-auto">
               Contact Our Team
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />

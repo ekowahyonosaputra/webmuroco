@@ -65,41 +65,32 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      <div className={`lg:hidden fixed inset-0 top-16 sm:top-20 z-40 transition-all duration-500 ${mobileOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
-        {/* Backdrop */}
-        <div 
-          className={`absolute inset-0 bg-deep-navy/95 backdrop-blur-xl transition-opacity duration-500 ${mobileOpen ? 'opacity-100' : 'opacity-0'}`}
-          onClick={() => setMobileOpen(false)}
-        />
-        
-        {/* Menu Content */}
-        <div className={`relative h-full overflow-y-auto transition-transform duration-500 ${mobileOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-          <div className="px-6 py-8 space-y-2">
-            {navLinks.map((link, index) => (
-              <a
-                key={link.label}
-                href={link.href}
-                onClick={() => setMobileOpen(false)}
-                className="block text-lg font-medium text-white/90 hover:text-accent-orange hover:bg-white/5 transition-all duration-300 py-3 px-4 rounded-lg"
-                style={{ 
-                  transitionDelay: `${index * 50}ms`,
-                  transform: mobileOpen ? 'translateX(0)' : 'translateX(-20px)',
-                  opacity: mobileOpen ? 1 : 0
-                }}
-              >
-                {link.label}
-              </a>
-            ))}
-            <div className="pt-6 mt-6 border-t border-white/10">
-              <a 
-                href="#contact" 
-                onClick={() => setMobileOpen(false)}
-                className="block w-full text-center px-6 py-3 bg-accent-orange text-white font-semibold rounded-lg hover:bg-accent-orange/90 transition-all duration-300"
-              >
-                Get Quote
-              </a>
-            </div>
+      {/* Mobile Menu - Dropdown */}
+      <div className={`lg:hidden absolute top-full left-0 right-0 bg-deep-navy/98 backdrop-blur-xl border-t border-white/10 shadow-2xl transition-all duration-300 overflow-hidden ${mobileOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+        <div className="px-4 py-6 space-y-1">
+          {navLinks.map((link, index) => (
+            <a
+              key={link.label}
+              href={link.href}
+              onClick={() => setMobileOpen(false)}
+              className="block text-base font-medium text-white/90 hover:text-accent-orange hover:bg-white/5 transition-all duration-300 py-3 px-4 rounded-lg"
+              style={{ 
+                transitionDelay: `${index * 50}ms`,
+                transform: mobileOpen ? 'translateY(0)' : 'translateY(-10px)',
+                opacity: mobileOpen ? 1 : 0
+              }}
+            >
+              {link.label}
+            </a>
+          ))}
+          <div className="pt-4 mt-4 border-t border-white/10">
+            <a 
+              href="#contact" 
+              onClick={() => setMobileOpen(false)}
+              className="block w-full text-center px-6 py-3 bg-accent-orange text-white font-semibold rounded-lg hover:bg-accent-orange/90 transition-all duration-300"
+            >
+              Get Quote
+            </a>
           </div>
         </div>
       </div>
