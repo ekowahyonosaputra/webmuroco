@@ -317,7 +317,7 @@ function ProductShowcase() {
   const current = products[activeProduct];
 
   return (
-    <section id="products" ref={ref} className="py-16 sm:py-20 lg:py-24 xl:py-32 relative bg-gradient-to-b from-deep-navy via-[#0a1f14] to-deep-navy">
+    <section id="products" ref={ref} className="py-16 sm:py-20 lg:py-24 xl:py-32 relative bg-gradient-to-b from-deep-navy via-[#1a2520] to-deep-navy">
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Section Header */}
         <div className={`text-center mb-12 sm:mb-16 transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
@@ -424,7 +424,7 @@ function ManufacturingProcess() {
 
   return (
     <section id="manufacturing" ref={ref} className="py-16 sm:py-20 lg:py-24 xl:py-32 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-deep-navy to-[#0a1f14]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-deep-navy to-[#1a2520]" />
       <div className="absolute inset-0 grid-pattern opacity-10" />
       
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative">
@@ -526,7 +526,7 @@ function FactoryFacilities() {
   ];
 
   return (
-    <section ref={ref} className="py-16 sm:py-20 lg:py-24 xl:py-32 relative bg-gradient-to-b from-[#0a1f14] to-deep-navy">
+    <section ref={ref} className="py-16 sm:py-20 lg:py-24 xl:py-32 relative bg-gradient-to-b from-[#1a2520] to-deep-navy">
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header */}
         <div className={`text-center mb-12 sm:mb-16 transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
@@ -615,7 +615,7 @@ function QualityAssurance() {
 
   return (
     <section id="quality" ref={ref} className="py-16 sm:py-20 lg:py-24 xl:py-32 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-deep-navy via-[#081a11] to-deep-navy" />
+      <div className="absolute inset-0 bg-gradient-to-b from-deep-navy via-[#1e2825] to-deep-navy" />
       
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative">
         {/* Header */}
@@ -779,7 +779,7 @@ function WhyChooseUs() {
   ];
 
   return (
-    <section ref={ref} className="py-16 sm:py-20 lg:py-24 xl:py-32 relative bg-gradient-to-b from-deep-navy to-[#0a1f14]">
+    <section ref={ref} className="py-16 sm:py-20 lg:py-24 xl:py-32 relative bg-gradient-to-b from-deep-navy to-[#1a2520]">
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header */}
         <div className={`text-center mb-12 sm:mb-16 transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
@@ -854,12 +854,12 @@ function CallToAction() {
           <p className="text-white/70 text-base sm:text-lg lg:text-xl max-w-3xl mx-auto mb-12 sm:mb-14 lg:mb-16 text-center leading-relaxed">
             Discover reliable polyester manufacturing solutions designed to meet your industry's evolving needs. Our team is ready to help you find the perfect solution.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
-            <a href="mailto:info@polytech.com" className="group px-8 sm:px-10 py-4 sm:py-5 bg-accent-orange text-white font-semibold rounded-xl hover:bg-accent-orange/90 transition-all duration-300 hover:shadow-xl hover:shadow-accent-orange/30 flex items-center justify-center gap-2 text-sm sm:text-base w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 w-full">
+            <a href="mailto:info@polytech.com" className="group px-8 sm:px-10 py-4 sm:py-5 bg-accent-orange text-white font-semibold rounded-xl hover:bg-accent-orange/90 transition-all duration-300 hover:shadow-xl hover:shadow-accent-orange/30 flex items-center justify-center gap-2 text-sm sm:text-base w-full sm:w-auto text-center">
               Contact Our Team
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
             </a>
-            <a href="mailto:sales@polytech.com" className="px-8 sm:px-10 py-4 sm:py-5 glass text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-300 text-sm sm:text-base w-full sm:w-auto flex items-center justify-center">
+            <a href="mailto:sales@polytech.com" className="px-8 sm:px-10 py-4 sm:py-5 glass text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-300 text-sm sm:text-base w-full sm:w-auto flex items-center justify-center text-center">
               Request a Quotation
             </a>
           </div>
@@ -897,7 +897,7 @@ function BackToTop() {
 /* ============ FOOTER ============ */
 function Footer() {
   return (
-    <footer className="bg-[#081a11] border-t border-white/5 pt-12 sm:pt-16 pb-6 sm:pb-8 relative">
+    <footer className="bg-[#151d1a] border-t border-white/5 pt-12 sm:pt-16 pb-6 sm:pb-8 relative mt-16 sm:mt-20">
       <div className="absolute inset-0 noise-overlay" />
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">

@@ -13,7 +13,7 @@ export default function HeroScene() {
 
     // Scene setup
     const scene = new THREE.Scene();
-    scene.fog = new THREE.FogExp2(0x0F2A1D, 0.008);
+    scene.fog = new THREE.FogExp2(0x1A2420, 0.008);
 
     // Camera
     const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
@@ -62,7 +62,7 @@ export default function HeroScene() {
     // Ground
     const groundGeom = new THREE.PlaneGeometry(100, 100);
     const groundMat = new THREE.MeshStandardMaterial({ 
-      color: 0x1a3a2a, 
+      color: 0x1e2d28, 
       roughness: 0.8,
       metalness: 0.2
     });
@@ -73,7 +73,7 @@ export default function HeroScene() {
 
     // Road markings
     const roadGeom = new THREE.PlaneGeometry(8, 60);
-    const roadMat = new THREE.MeshStandardMaterial({ color: 0x2a4a3a, roughness: 0.6 });
+    const roadMat = new THREE.MeshStandardMaterial({ color: 0x2d3d38, roughness: 0.6 });
     const road = new THREE.Mesh(roadGeom, roadMat);
     road.rotation.x = -Math.PI / 2;
     road.position.set(0, 0.01, 0);
@@ -192,7 +192,7 @@ function createTruck(): THREE.Group {
 
   // Trailer bed
   const bedGeom = new THREE.BoxGeometry(12, 0.5, 3);
-  const bedMat = new THREE.MeshStandardMaterial({ color: 0x2a4a3a, metalness: 0.7, roughness: 0.4 });
+  const bedMat = new THREE.MeshStandardMaterial({ color: 0x2d3d38, metalness: 0.7, roughness: 0.4 });
   const bed = new THREE.Mesh(bedGeom, bedMat);
   bed.position.set(-2, 1.5, 0);
   bed.castShadow = true;
@@ -361,7 +361,7 @@ function createCrane(): THREE.Group {
 
 function createIndustrialBackground(scene: THREE.Scene) {
   // Warehouse buildings
-  const buildingMat = new THREE.MeshStandardMaterial({ color: 0x1a3a2a, roughness: 0.7, metalness: 0.3 });
+  const buildingMat = new THREE.MeshStandardMaterial({ color: 0x1e2d28, roughness: 0.7, metalness: 0.3 });
   
   // Large warehouse
   const warehouse1Geom = new THREE.BoxGeometry(20, 8, 12);
@@ -372,7 +372,7 @@ function createIndustrialBackground(scene: THREE.Scene) {
 
   // Warehouse roof
   const roofGeom = new THREE.BoxGeometry(21, 0.5, 13);
-  const roofMat = new THREE.MeshStandardMaterial({ color: 0x2a4a3a, metalness: 0.5 });
+  const roofMat = new THREE.MeshStandardMaterial({ color: 0x2d3d38, metalness: 0.5 });
   const roof = new THREE.Mesh(roofGeom, roofMat);
   roof.position.set(-20, 8.25, -15);
   scene.add(roof);
@@ -409,7 +409,7 @@ function createIndustrialBackground(scene: THREE.Scene) {
 
   // Loading dock
   const dockGeom = new THREE.BoxGeometry(10, 1.5, 6);
-  const dockMat = new THREE.MeshStandardMaterial({ color: 0x2a4a3a, roughness: 0.6 });
+  const dockMat = new THREE.MeshStandardMaterial({ color: 0x2d3d38, roughness: 0.6 });
   const dock = new THREE.Mesh(dockGeom, dockMat);
   dock.position.set(-10, 0.75, 5);
   dock.receiveShadow = true;
